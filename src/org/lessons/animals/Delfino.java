@@ -1,6 +1,6 @@
 package org.lessons.animals;
 
-public class Delfino extends AbstractAnimal {
+public class Delfino extends AbstractAnimal implements INuotante {
 
     @Override
     public void makeSound() {
@@ -12,4 +12,8 @@ public class Delfino extends AbstractAnimal {
         System.out.println("Mangia pesci");
     }
     
+        @Override
+    public void nuota() {
+        System.out.println("Sto nuotando!");
+    }
 }

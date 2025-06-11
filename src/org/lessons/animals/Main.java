@@ -5,7 +5,7 @@ public class Main {
      Cane cane = new Cane();
      Delfino delfino = new Delfino();
      Passerotto passerotto = new Passerotto(); 
-     Acquila aquila = new Acquila();
+     Aquila aquila = new Aquila();
 
      System.out.println("Cane:");
      cane.makeSound();
@@ -26,5 +26,18 @@ public class Main {
      aquila.makeSound();
      aquila.eat();
      aquila.sleep();
+     
+
+     faiVolare(aquila);
+     faiNuotare(delfino);
+     faiVolare(passerotto);
     }
+    static void faiVolare(IVolante animale) {
+        animale.vola();
+    }
+
+    static void faiNuotare(INuotante animale) {
+        animale.nuota();
+    }
+
 }
